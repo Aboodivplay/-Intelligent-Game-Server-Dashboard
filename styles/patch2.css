@@ -1,0 +1,42 @@
+
+/* --- Additional Patches --- */
+
+/* Fix gauge centering */
+.gauge-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gauge-value {
+  position: relative !important; /* override the bad absolute */
+}
+
+/* Fix remediation toggle switch showing double */
+.toggle-switch input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  margin: 0;
+}
+
+/* Fix grid span for history table */
+.col-span-2, .col-span-full {
+  grid-column: 1 / -1;
+}
+
+/* Fix flex alignment */
+.align-center {
+  align-items: center;
+}
+
+/* Ensure data tables can stretch */
+.overflow-x-auto {
+  width: 100%;
+  overflow-x: auto;
+}
