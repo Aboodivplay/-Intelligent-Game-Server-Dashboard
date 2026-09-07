@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGSO Engine | Predict & Prevent Server Crashes</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="assets/logo.jpg" alt="IGSO Logo" style="height: 32px; border-radius: 4px;"> 
+                IGSO <span class="logo-light">Engine</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#team">The Team</a></li>
+            </ul>
+            <a href="../dashboard/index.html" class="btn btn-primary nav-cta">Launch Dashboard</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge-pill mb-4">v1.0 is Live • University of Petra GP</div>
+            <h1 class="hero-title">Predict Game Server Crashes <br><span class="text-gradient">Before They Happen.</span></h1>
+            <p class="hero-subtitle">The Intelligent Game Server Optimization (IOGS) Engine uses advanced LSTM Neural Networks to forecast server instability and automatically execute remediation protocols—keeping your players online and lag-free.</p>
+            <div class="hero-buttons">
+                <a href="#architecture" class="btn btn-primary btn-lg">Explore the Engine</a>
+                <a href="https://github.com" class="btn btn-secondary btn-lg">Read Documentation</a>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Next-Generation Server Intelligence</h2>
+                <p>Present day monitoring tools work retrospectively. We built IOGS to look into the future.</p>
+            </div>
+
+            <div class="feature-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>LSTM Predictive Modeling</h3>
+                    <p>By analyzing historical telemetry windows, our neural network forecasts latency spikes and server crashes with a 5 to 10 minute prediction window.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Deep Game State Telemetry</h3>
+                    <p>Goes beyond basic CPU & RAM. Our Forge Mod extracts real-time entity counts, player bounding boxes, and TPS metrics directly from the game engine.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Automated Remediation</h3>
+                    <p>If an elevated probability of failure is observed, the engine automatically attempts corrective action, such as clearing massive TNT clusters or dropped items.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>In-Game Admin GUI</h3>
+                    <p>Admins can toggle auto-remediation rules directly inside Minecraft using a sleek, native Chest GUI—100% server-side, with no client mods required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture section bg-darker">
+        <div class="container">
+            <div class="architecture-content">
+                <div class="architecture-text">
+                    <h2>How It Works</h2>
+                    <p>The IOGS architecture is built for ultra-low latency data streaming and robust prediction capabilities.</p>
+                    
+                    <ul class="arch-list">
+                        <li>
+                            <span class="step-num">1</span>
+                            <div>
+                                <strong>Java Edge Agent (Forge)</strong>
+                                <p>Collects real-time hardware telemetry and game state variables, transmitting it securely.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <div>
+                                <strong>Python AI Backend</strong>
+                                <p>Preprocesses incoming streams into time-series windows and feeds them into the LSTM model.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <div>
+                                <strong>Real-Time Dashboard</strong>
+                                <p>Administrators monitor live alerts, manage automated rules, and review predictive confidence levels.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="architecture-graphic">
+                    <div class="server-node animate-float">
+                        <div class="node-icon">☕</div>
+                        <div>Minecraft Server</div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="server-node primary animate-float" style="animation-delay: 1s;">
+                        <div class="node-icon">🐍</div>
+                        <div>IOGS Backend</div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="server-node animate-float" style="animation-delay: 2s;">
+                        <div class="node-icon">📈</div>
+                        <div>Web Dashboard</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+        <div class="container text-center">
+            <h2>Built by the Future of IT</h2>
+            <p class="mb-5">Developed as a Graduate Project at the Faculty of Information Technology, University of Petra.</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="avatar">AA</div>
+                    <h3>Abdulrahman Ashraf</h3>
+                    <p class="role">Software Engineer & AI Researcher</p>
+                    <p class="student-id">ID: 202210005</p>
+                </div>
+                <div class="team-member">
+                    <div class="avatar">AW</div>
+                    <h3>Ayham Magdi Walid Al-Aju</h3>
+                    <p class="role">Software Engineer & Systems Architect</p>
+                    <p class="student-id">ID: 202220697</p>
+                </div>
+            </div>
+
+            <div class="supervisor mt-5">
+                <p class="text-secondary">Supervised By:</p>
+                <h4 style="color: #fff;">Dr. Eman Al Duweib</h4>
+                <p class="text-secondary text-sm">Semester 2 / 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="logo mb-3">
+                <span class="logo-icon">⚡</span> IOGS
+            </div>
+            <p class="text-secondary">Intelligent Game Server Optimization Engine.</p>
+            <p class="text-muted text-sm mt-4">&copy; 2026 University of Petra. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
